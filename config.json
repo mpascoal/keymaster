@@ -1,0 +1,14 @@
+{
+    "connect_string": {
+        "server" : "10.17.4.166\\SQLHMG",
+        "nextel" : "cd_catalogo_nextel",
+        "correios" : "cd_catalogo_correios",
+        "user": "cd_catalogo_correios",
+        "password": "6XkMP5vyTd8nfIQIZBiX"
+    },
+    "queries":{
+        "retreave_sku_db": "select [IdSku] as _id_sku,[CodigoSku] as _sku from Sku ",
+        "retriave_ddd_codigoddd": "select CodigoDdd from Ddd",
+        "retriave_skus_ddd":"SELECT s.*,d.CodigoDdd FROM Sku s inner join SkuDdd sd on s.IdSku = sd.IdSku inner join ddd d on d.IdDdd = sd.IdDdd"
+    }
+}
