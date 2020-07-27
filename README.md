@@ -1,0 +1,1 @@
+App of incorporate allbundle registes to a database from create sql scripts.
